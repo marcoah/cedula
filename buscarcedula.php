@@ -1,17 +1,5 @@
 <?php
 
-if( isset($_GET['nacionalidad'],$_GET['cedula']) ) {
-
-    $nacionalidad = $_GET['nacionalidad'];
-    $cedula = htmlspecialchars($_GET['cedula']);
-
-    $curls = new SearchCurl();
-    $curls->SearchCNE($nacionalidad, $cedula);
-
-} else {
-    die("Solicitud no válida.");
-}
-
 class SearchCurl {
 
     public static function SearchCNE($nac, $ci) {
@@ -66,4 +54,15 @@ class SearchCurl {
     }
 
 }
-?>
+
+if( isset($_GET['nacionalidad'],$_GET['cedula']) ) {
+
+    $nacionalidad = $_GET['nacionalidad'];
+    $cedula = htmlspecialchars($_GET['cedula']);
+
+    $curls = new SearchCurl();
+    $curls->SearchCNE($nacionalidad, $cedula);
+
+} else {
+    die("Solicitud no válida.");
+}

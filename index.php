@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title>Busqueda por Cedula</title>
 
     <script src="jquery-3.1.1.min.js"></script>
     <script src="buscacedula.js"></script>
