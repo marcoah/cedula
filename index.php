@@ -11,10 +11,10 @@
 
     <title>Busqueda por Cedula</title>
 
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="buscacedula.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/buscacedula.js"></script>
 
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style type="text/css">
 
