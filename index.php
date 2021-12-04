@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Busqueda de datos por cedula de identidad">
+    <meta name="author" content="marcoah">
 
     <title>Busqueda por Cedula</title>
 
@@ -71,7 +70,6 @@
             <hr>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Pagar</button>
                 <input type="reset" tabindex="8" value="Borrar" class="btn btn-default">
                 <input type="hidden" name="estado" value="1">
             </div>
