@@ -10,7 +10,7 @@
 
     <title>Busqueda por Cedula</title>
 
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/buscacedula.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
