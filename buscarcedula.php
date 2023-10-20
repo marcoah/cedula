@@ -37,10 +37,9 @@ class SearchCurl {
         curl_setopt($curl, CURLOPT_HEADER, FALSE);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
-        if (curl_exec($curl) === false) {
+        $return = curl_exec($curl);
+        if ($return === false) {
             echo 'Curl error: ' . curl_error($curl);
-        } else {
-            $return = curl_exec($curl);
         }
         curl_close($curl);
 
@@ -55,14 +54,12 @@ class SearchCurl {
 
 }
 
-if( isset($_GET['nacionalidad'],$_GET['cedula']) ) {
-
-    $nacionalidad = $_GET['nacionalidad'];
-    $cedula = htmlspecialchars($_GET['cedula']);
-
-    $curls = new SearchCurl();
-    $curls->SearchCNE($nacionalidad, $cedula);
-
-} else {
-    die("Solicitud no válida.");
+if(!isset($_GET['nacionalidad'],$_GET['cedula']) ) {
+     die("Solicitud no válida.");
 }
+
+$nacionalidad = $_GET['nacionalidad'];
+$cedula = htmlspecialchars($_GET['cedula']);
+
+$curls = new SearchCurl();
+$curls->SearchCNE($nacionalidad, $cedula);
