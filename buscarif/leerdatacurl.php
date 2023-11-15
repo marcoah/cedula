@@ -15,8 +15,8 @@ class SearchCurl {
      */
     public static function searchSeniat($rif) {
         $url = "http://www.elrif.com/?rif=$rif";
+        //$url = "https://www.elrif.com/search.php?q=$rif";
         $resource = self::geUrl($url);
-
 
         $findme[0] = 'RIF de la empresa:'; // Identifica si tiene identificacion de empresa
         $findme[1] = 'Cédula del contribuyente';

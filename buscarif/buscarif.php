@@ -8,7 +8,7 @@
 <input type="button" value="BUSCAR RIF" onclick="buscarif();"/>
 <div id="datos"></div>
 </body>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript" language="javascript"></script>
+<script src="../js/jquery-3.6.4.min.js" type="text/javascript" language="javascript"></script>
 <script src="https://jquery-xml2json-plugin.googlecode.com/svn/trunk/jquery.xml2json.js" type="text/javascript" language="javascript"></script>
 <script>
     function buscarif(){
